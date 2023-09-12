@@ -21,7 +21,7 @@ const CreateTodo = () => {
       toast.success(data.message);
       setRefresh((pre) => !pre);
     } catch (error) {
-      console.error("Internal server error");
+      toast.error("Internal server error");
     }
   };
 

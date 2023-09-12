@@ -9,10 +9,6 @@ export const AppWrapper = () => {
   const [refresh, setRefresh] = useState(false);
   const [isAuth, setIsAuth] = useState(false);
 
-  useEffect(() => {
-    console.log(isAuth);
-  }, [isAuth]);
-
   return (
     <Context.Provider value={{ refresh, setRefresh, isAuth, setIsAuth }}>
       <App />
